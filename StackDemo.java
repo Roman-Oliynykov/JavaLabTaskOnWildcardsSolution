@@ -73,8 +73,9 @@ class MyStack <E> {
 	}	
 	
 	protected void checkCapacity() {
-		if ( index < capacity && capacity < (capacity << 1) ) return; // int overflow also checked
-		
+		if ( index < capacity ) return; 
+		if ( capacity > (capacity << 1) ) throw new ArithmeticException("Integer overflow on attempt to extend MyStack<>");
+
 		storage = Arrays.copyOf( storage, capacity <<= 1 ); // capacity = capacity * 2;
 	}
 	
