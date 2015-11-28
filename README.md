@@ -1,4 +1,6 @@
 #Solution for a lab task on Java Wildcards
 
-Demo of Stack implementation supporting hierarchy of generic classes
+Own stack implementation supporting hierarchy of generic classes
+
+It's a variant for the solution of a lab task on the Java programming course given in V.N. Karazin Kharkov National University.
 
